@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Embed Test</title>
+</head>
+<body>
+    <h1>Test Website</h1>
+    <p>This is a test to embed the chatbot widget.</p>
+    <script>
+        (function () {
+            var chatbotWidget = document.createElement('iframe');
+            chatbotWidget.src = "http://193.203.160.63:3003";
+            chatbotWidget.style.position = "fixed";
+            chatbotWidget.style.bottom = "20px";
+            chatbotWidget.style.right = "20px";
+            chatbotWidget.style.width = "400px";
+            chatbotWidget.style.height = "500px";
+            chatbotWidget.style.border = "none";
+            chatbotWidget.style.zIndex = "9999";
+            document.body.appendChild(chatbotWidget);
+        })();
+    </script>
+</body>
+</html>
